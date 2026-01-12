@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <title>বাংলা আর্টিকেল - টিটিএস প্লেয়ার সহ</title>
+
+  <!-- Keep your original CSS files -->
+  <link rel="stylesheet" href="font-awesome_ver=6.7.2.css">
+  <link rel="stylesheet" href="style_ver=4.0.7.491.css">
+
+  <style>
+    .tts-player {
+      margin-top: 20px;
+      padding: 15px 20px;
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: 0 0 50px #ddd;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .tts-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .tts-controls .button {
+      min-width: 40px;
+      justify-content: center;
+      padding-left: 0.75em;
+      padding-right: 0.75em;
+    }
+    .tts-status {
+      font-size: 13px;
+      color: #666;
+    }
+    .tts-chunks {
+      max-height: 180px;
+      overflow-y: auto;
+      border-top: 1px solid #eee;
+      padding-top: 8px;
+      margin-top: 5px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .tts-chunk {
+      cursor: pointer;
+      padding: 4px 0;
+    }
+    .tts-chunk:hover {
+      background: #f9f9ff;
+    }
+    .tts-chunk.active {
+      background: #e7ecff;
+      border-left: 3px solid #7243e9;
+      padding-left: 7px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Very simple header, you can replace with your theme header later -->
+  <header>
+    <div class="mid">
+      <div class="logo">
+        <a href="index.html"><h2>আমার ব্লগ</h2></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="full_post_area">
+    <div class="mid has_sidebar single_main">
+      <div class="col_2">
+        <!-- Article content -->
+        <div class="post_content" id="article-content">
+          <h1>বাংলা টেক্সট টু স্পিচ ডেমো আর্টিকেল</h1>
+          <p>
+            এটি একটি ডেমো বাংলা আর্টিকেল। এই আর্টিকেলের লেখা ব্রাউজারের বিল্ট ইন টেক্সট টু স্পিচ ইঞ্জিন ব্যবহার করে উচ্চারণ করা হবে।
+          </p>
+          <p>
+            নিচের প্লে বাটনে ক্লিক করলে প্রথম বাক্য থেকে শুরু করে একে একে সব বাক্য পড়ে শোনানো হবে।
+          </p>
+          <p>
+            আপনি চাইলে তালিকা থেকে যেকোনো বাক্যের উপর ক্লিক করে সেই বাক্য থেকে পড়া শুরু করতে পারবেন। এভাবে সহজভাবে সিক করা য��য়।
+          </p>
+          <p>
+            স্পিড অপশন ব্যবহার করে পড়ার গতি কম বা বেশি করা যাবে। এই ফিচারটি গুগল ক্রোমসহ অন্যান্য মডার্ন ব্রাউজারেও কাজ করবে।
+          </p>
+        </div>
+
+        <!-- TTS Player -->
+        <div class="tts-player" id="tts-player">
+          <div class="tts-controls">
+            <button class="button is-primary" id="tts-play" title="প্লে">
+              <i class="fa fa-play"></i>
+            </button>
+            <button class="button is-light" id="tts-pause" title="পজ / রিজিউম">
+              <i class="fa fa-pause"></i>
+            </button>
+            <button class="button is-light" id="tts-stop" title="স্টপ">
+              <i class="fa fa-stop"></i>
+            </button>
+            <button class="button is-light" id="tts-prev" title="আগের বাক্য">
+              <i class="fa fa-step-backward"></i>
+            </button>
+            <button class="button is-light" id="tts-next" title="পরের বাক্য">
+              <i class="fa fa-step-forward"></i>
+            </button>
+
+            <label style="margin-left: auto; font-size: 13px;">
+              গতি:
+              <select id="tts-rate" style="font-size: 13px; padding: 2px 4px;">
+                <option value="0.75">০.৭৫x</option>
+                <option value="1" selected>১x</option>
+                <option value="1.25">১.২৫x</option>
+                <option value="1.5">১.৫x</option>
+              </select>
+            </label>
+          </div>
+          <div class="tts-status" id="tts-status">
+            প্রস্তুত। প্লে বাটনে ক্লিক করুন।
+          </div>
+          <div class="tts-chunks" id="tts-chunks">
+            <!-- বাক্যগুলো জাভাস্ক্রিপ্ট দিয়ে যোগ হবে -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keep your original JS files, unmodified -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="owl.carousel.min_ver=6.7.2.js"></script>
+  <script src="main_ver=4.0.7.491.js"></script>
+
+  <!-- New TTS player script -->
+  <script src="tts-player.js"></script>
+</body>
+  </html>
