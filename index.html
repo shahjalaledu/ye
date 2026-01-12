@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrickBD Style Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts: Hind Siliguri or any similar font -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome_ver=6.7.2.css">
+
+    <!-- Owl Carousel core CSS -->
+    <link rel="stylesheet" href="css/style_ver=4.0.7.491.css">
+
+    <!-- jQuery (required by your JS + Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.min_ver=6.7.2.js"></script>
+
+    <!-- Main bundled JS (webpack output) -->
+    <script src="js/main_ver=4.0.7.491.js" defer></script>
+
+    <style>
+        body {
+            font-family: "Hind Siliguri", sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="mid">
+        <a href="#" class="menu_toggle naaai"><i class="fa fa-bars"></i></a>
+
+        <div class="logo">
+            <a href="/"><img src="images/logo.png" alt="Site Logo"></a>
+        </div>
+
+        <nav class="m_menu">
+            <ul>
+                <li class="menu-item-has-children">
+                    <a href="#">Home</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Latest Posts</a></li>
+                        <li><a href="#">Featured</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li class="search">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                    <input type="search" placeholder="Search...">
+                </li>
+                <li class="login">
+                    <a href="#">Login / Signup</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="search_login">
+            <a href="#" class="trickbd-notification">
+                <i class="fa fa-bell"></i>
+                <span class="trickbd_notification_count">3</span>
+            </a>
+            <a href="#" class="m_search">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Mobile search bar -->
+    <div class="mob_search">
+        <form action="" method="get">
+            <input type="search" name="s" placeholder="Search...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</header>
+
+<!-- Main slider (Owl carousel) -->
+<section class="main_slider" style="background-image:url('images/slider-bg.jpg');">
+    <div class="slider owl-carousel">
+        <div class="slide">
+            <div class="mid">
+                <div class="sl_text">
+                    <h6>
+                        <a href="#">Featured</a>
+                        <span class="triangle"></span>
+                    </h6>
+                    <h3><a href="#">Welcome to your new TrickBD-style theme</a></h3>
+                    <p>
+                        This is a demo slide. Replace this text and image with your real content.
+                    </p>
+                    <a href="#" class="more">Read More</a>
+                </div>
+                <div class="sl_img">
+                    <img src="images/slide-1.jpg" alt="Slide Image">
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="mid">
+                <div class="sl_text">
+                    <h6>
+                        <a href="#">Hot</a>
+                        <span class="triangle"></span>
+                    </h6>
+                    <h3><a href="#">Second sample slide title here</a></h3>
+                    <p>Use Owl Carousel to show your featured posts.</p>
+                    <a href="#" class="more">Read More</a>
+                </div>
+                <div class="sl_img">
+                    <img src="images/slide-2.jpg" alt="Slide Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#recent-posts" class="down">
+        <i class="fa fa-angle-down"></i>
+    </a>
+</section>
+
+<!-- Featured posts on homepage -->
+<section class="featured_post home_featured">
+    <div class="mid">
+        <article class="box">
+            <div class="image">
+                <img src="images/featured-1.jpg" alt="Featured 1">
+                <span class="cat">
+                    <a href="#">Android</a>
+                </span>
+            </div>
+            <div class="f_content">
+                <h3 class="p_title">
+                    <a href="#">Sample featured post one</a>
+                </h3>
+                <p class="desc">
+                    Short description of the featured post. Customize as you like.
+                </p>
+                <ul>
+                    <li class="cat"><a href="#">Android</a></li>
+                    <li>
+                        <a href="#" class="user">
+                            <img src="images/avatar-1.jpg" alt="User">
+                        </a>
+                        <a href="#" rel="author">Author Name</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-calendar"></i> Jan 1, 2024</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-eye"></i> 1234</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-comments"></i> 15</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="box">
+            <div class="image">
+                <img src="images/featured-2.jpg" alt="Featured 2">
+                <span class="cat">
+                    <a href="#">Tips</a>
+                </span>
+            </div>
+            <div class="f_content">
+                <h3 class="p_title">
+                    <a href="#">Another featured post title</a>
+                </h3>
+                <p class="desc">
+                    Another brief description. You can pull this from WordPress or any CMS.
+                </p>
+                <ul>
+                    <li class="cat"><a href="#">Tips</a></li>
+                    <li>
+                        <a href="#" class="user">
+                            <img src="images/avatar-2.jpg" alt="User">
+                        </a>
+                        <a href="#" rel="author">User Two</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-calendar"></i> Jan 5, 2024</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-eye"></i> 567</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-comments"></i> 8</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="box">
+            <div class="image">
+                <img src="images/featured-3.jpg" alt="Featured 3">
+                <span class="cat">
+                    <a href="#">Tutorial</a>
+                </span>
+            </div>
+            <div class="f_content">
+                <h3 class="p_title">
+                    <a href="#">Third featured post example</a>
+                </h3>
+                <p class="desc">
+                    Add more boxes or turn this section into a dynamic query.
+                </p>
+                <ul>
+                    <li class="cat"><a href="#">Tutorial</a></li>
+                    <li>
+                        <a href="#" class="user">
+                            <img src="images/avatar-3.jpg" alt="User">
+                        </a>
+                        <a href="#" rel="author">User Three</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-calendar"></i> Jan 10, 2024</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-eye"></i> 980</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-comments"></i> 3</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Recent posts + sidebar -->
+<section id="recent-posts" class="recent_posts">
+    <div class="mid has_sidebar">
+        <div class="col_2">
+            <article>
+                <div class="image">
+                    <a href="#"><img src="images/post-1.jpg" alt="Post 1"></a>
+                </div>
+                <div class="content">
+                    <h2 class="p_title">
+                        <a href="#">Sample blog post in list layout</a>
+                    </h2>
+                    <p>
+                        Intro snippet for this post. This area will be the excerpt or first part of the article.
+                    </p>
+                    <ul>
+                        <li class="cat">
+                            <a href="#">Android</a>
+                        </li>
+                        <li class="user">
+                            <a href="#" class="user"><img src="images/avatar-1.jpg" alt=""></a>
+                            <a href="#" rel="author">Author Name</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-calendar"></i> Jan 12, 2024</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-eye"></i> 321</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <a href="#"><img src="images/post-2.jpg" alt="Post 2"></a>
+                </div>
+                <div class="content">
+                    <h2 class="p_title">
+                        <a href="#">Another sample blog post</a>
+                    </h2>
+                    <p>
+                        Brief summary of another post. All of this is just sample markup using your CSS classes.
+                    </p>
+                    <ul>
+                        <li class="cat">
+                            <a href="#">Tips</a>
+                        </li>
+                        <li class="user">
+                            <a href="#" class="user"><img src="images/avatar-2.jpg" alt=""></a>
+                            <a href="#" rel="author">User Two</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-calendar"></i> Jan 11, 2024</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-eye"></i> 200</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Pagination -->
+            <ul class="page-numbers">
+                <li><a class="prev" href="#">&laquo;</a></li>
+                <li><span class="current">1</span></li>
+                <li><a class="page" href="#">2</a></li>
+                <li><a class="page" href="#">3</a></li>
+                <li><a class="next" href="#">&raquo;</a></li>
+            </ul>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="search_aside">
+                <form action="" method="get">
+                    <input type="search" name="s" placeholder="Search...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="side_posts s_popular">
+                <h3>Hot / Popular</h3>
+                <ul>
+                    <li class="l_hot">
+                        <a href="#">Hot</a>
+                    </li>
+                    <li class="l_popular">
+                        <a href="#">Popular</a>
+                    </li>
+                </ul>
+
+                <article class="hot s_p_common">
+                    <div class="image">
+                        <a href="#"><img src="images/post-3.jpg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3><a href="#">Hot post title here</a></h3>
+                        <a href="#" class="date"><i class="fa fa-calendar"></i> Jan 8, 2024</a>
+                    </div>
+                </article>
+
+                <article class="popular s_p_common">
+                    <div class="image">
+                        <a href="#"><img src="images/post-4.jpg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3><a href="#">Popular post title here</a></h3>
+                        <a href="#" class="date"><i class="fa fa-calendar"></i> Jan 3, 2024</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cats">
+                <h3>Categories</h3>
+                <ul>
+                    <li class="list_cats">
+                        <a href="#"><img src="images/icon-android.png" alt=""> Android <i class="fa fa-angle-down"></i></a>
+                        <ul>
+                            <li><a href="#">Apps</a></li>
+                            <li><a href="#">Games</a></li>
+                        </ul>
+                    </li>
+                    <li class="list_cats">
+                        <a href="#"><img src="images/icon-tips.png" alt=""> Tips &amp; Tricks <i class="fa fa-angle-down"></i></a>
+                        <ul>
+                            <li><a href="#">Root</a></li>
+                            <li><a href="#">Customization</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="authors">
+                <h3>Top Authors</h3>
+                <ul>
+                    <li class="user">
+                        <a href="#">
+                            <img class="avatar" src="images/avatar-1.jpg" alt="">
+                            <span>Author One</span>
+                        </a>
+                    </li>
+                    <li class="user">
+                        <a href="#">
+                            <img class="avatar" src="images/avatar-2.jpg" alt="">
+                            <span>Author Two</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="more">View All</a>
+            </div>
+
+            <div class="ad_sec">
+                <img src="images/ad-300x250.jpg" alt="Ad">
+            </div>
+        </aside>
+    </div>
+</section>
+
+<!-- Simple single-post like/share demo to trigger TrickBD_Like -->
+<section class="full_post_area single_main">
+    <div class="mid has_sidebar col_2 sidebar">
+        <div class="col_2">
+            <article class="post_content">
+                <h1>Single Post Title Demo</h1>
+                <p>
+                    This is a demo single post content area. The like button below uses
+                    the <code>.trickbd-like-count</code> handler from <code>TrickBD_Like</code>.
+                </p>
+            </article>
+
+            <div class="share_post">
+                <div class="main_share">
+                    <p><i class="fa fa-share-alt"></i> Share:</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <ul class="like_report">
+                    <li class="trickbd-like-count" data-id="123">
+                        <a href="#" class="trickbd_btn_nice">
+                            <i class="fa fa-heart"></i>
+                            <span>10</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="author_about">
+                <a href="#" class="image">
+                    <img src="images/avatar-1.jpg" alt="Author">
+                </a>
+                <span>Moderator</span>
+                <h3><a href="#">Author One</a></h3>
+                <h4>@authorone</h4>
+                <p>Short author bio goes here. Customize or bind to your backend.</p>
+                <ul class="author_social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <div class="num_posts_comments">
+                    <a href="#"><i class="fa fa-bars"></i> 25 Posts</a>
+                    <a href="#"><i class="fa fa-comment"></i> 130 Comments</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<!-- Categories tiles -->
+<section class="categories">
+    <div class="mid">
+        <h2 class="h_middle">Categories</h2>
+        <ul>
+            <li>
+                <img class="square" src="images/cat-bg-1.jpg" alt="">
+                <a href="#">
+                    <img src="images/icon-android.png" alt="">
+                    <span class="p_title">Android</span>
+                    <span class="P_count">120 Posts</span>
+                </a>
+            </li>
+            <li>
+                <img class="square" src="images/cat-bg-2.jpg" alt="">
+                <a href="#">
+                    <img src="images/icon-tips.png" alt="">
+                    <span class="p_title">Tips &amp; Tricks</span>
+                    <span class="P_count">80 Posts</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <div class="foo_top">
+        <div class="mid">
+            <div class="box b1">
+                <h2>About</h2>
+                <ul>
+                    <li><a href="#">About Site</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="box b2">
+                <h2>Popular Topics</h2>
+                <ul>
+                    <li>
+                        <h3><a href="#">Android Tricks</a></h3>
+                        <p><a href="#">Rooting Guide</a></p>
+                    </li>
+                    <li>
+                        <h3><a href="#">Customization</a></h3>
+                        <p><a href="#">Icon Packs</a></p>
+                    </li>
+                    <li>
+                        <h3><a href="#">Apps</a></h3>
+                        <p><a href="#">Best Free Apps</a></p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box b4">
+                <h2>Social</h2>
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i> YouTube</a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i> RSS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="email">
+            <input type="email" placeholder="Enter your email for updates">
+            <button type="button"><i class="fa fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <div class="foo_bottom">
+        <div class="mid">
+            <p style="color:#aaa;">&copy; 2026 Your Site Name. All rights reserved.</p>
+            <nav class="m_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="scroll_top"><i class="fa fa-angle-up"></i></a>
+
+<script>
+    // Minimal global object for TrickBD_Like script to not break
+    window.trickbd = window.trickbd || {
+        is_logged: true,
+        login_url: "/login",
+        ajaxurl: "/ajax-endpoint" // replace with your backend handler
+    };
+</script>
+
+</body>
+</html>
